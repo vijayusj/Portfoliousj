@@ -21,11 +21,11 @@ const TypeA = () => {
       className={'type'}
       deletionSpeed={70}
       repeat={Infinity}
-      style={{
-        fontSize: '4rem',
-        color: ' rgb(198, 21, 98)',
-        fontWeight: '800',
-      }}
+      // style={{
+      //   fontSize: '4rem',
+
+      //   fontWeight: '800',
+      // }}
     />
   );
 };

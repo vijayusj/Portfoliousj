@@ -2,16 +2,10 @@ import React, { useState, useEffect, useCallback } from 'react';
 import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
 
-const BackgroundA = () => {
-  const [blast, setBlast] = useState(false);
-  setTimeout(() => {
-    setBlast(true);
-  }, 5000);
-
-  useEffect(() => {}, [blast]);
+const BackgroundA = ({ ani }) => {
   const opt1 = {
     fullScreen: {
-      // enable: false,
+      enable: false,
       zIndex: -1,
     },
     background: {
@@ -71,7 +65,7 @@ const BackgroundA = () => {
           enable: false,
           // area: 800,
         },
-        value: 100,
+        value: 30,
       },
 
       opacity: {
@@ -88,21 +82,22 @@ const BackgroundA = () => {
   };
   const opt2 = {
     fullScreen: {
-      zIndex: -1,
+      zIndex: 9,
     },
+
     particles: {
       number: {
         value: 0,
       },
       color: {
-        value: ['#00FFFC', '#FC00FF', '#fffc00'],
+        value: ['#00FFFC', '#FC00FF', '#fffc00', '#57df03'],
       },
       shape: {
         type: ['polygon', 'triangle', 'circle'],
         options: {},
       },
       opacity: {
-        value: 1,
+        value: 6,
         animation: {
           enable: true,
           minimumValue: 0,
@@ -194,17 +189,17 @@ const BackgroundA = () => {
     },
     emitters: {
       position: {
-        x: 70,
-        y: 30,
+        x: 50,
+        y: 5,
       },
       life: {
-        count: 3,
+        count: 4,
         duration: 0.4,
         delay: 0.4,
       },
       rate: {
         delay: 0.4,
-        quantity: 150,
+        quantity: 100,
       },
       size: {
         width: 0,
@@ -219,27 +214,30 @@ const BackgroundA = () => {
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
-    // await console.log(container);
+    await console.log(container);
   }, []);
 
   return (
     <div className="bg">
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={opt1}
-      />
-      <div className="ani">
-        {blast ? (
+      <div className="blast">
+        {ani && (
+          <Particles
+            id="tsparticles"
+            init={particlesInit}
+            loaded={particlesLoaded}
+            options={opt1}
+          />
+        )}
+      </div>
+
+      <div className="blast">
+        {!ani && (
           <Particles
             id="tsparticle"
             init={particlesInit}
             loaded={particlesLoaded}
             options={opt2}
           />
-        ) : (
-          ''
         )}
       </div>
     </div>

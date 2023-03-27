@@ -3,6 +3,8 @@ import Background from './BackgroundA';
 import Blast from './Blast';
 import img1 from '../assets/images/5295497.jpg';
 import img2 from '../assets/images/5295526.jpg';
+import img3 from '../assets/images/animated.jpeg';
+import mask from '../assets/images/sjmask_thumbnail.png';
 import {
   FaVolumeMute,
   FaVolumeUp,
@@ -13,10 +15,10 @@ import {
 import { SiLeetcode } from 'react-icons/si';
 // scss
 import ad from '../assets/audio/Cornfield_Chase_Piano_Interstellar-646455.mp3';
-import '../sass/_header.scss';
+// import '../sass/_header.scss';
 import TypeA from './TypeA';
 const Header = () => {
-  const audioEle = useRef();
+  // const audioEle = useRef();
   // const [blast, setBlast] = useState(true);
   const [play, setPlay] = useState(false);
 
@@ -24,38 +26,44 @@ const Header = () => {
     setPlay(!play);
   };
 
-  useEffect(() => {
-    if (play) {
-      audioEle.current.play();
-    } else {
-      audioEle.current.pause();
-    }
-    console.log('11');
-  }, [play]);
+  // useEffect(() => {
+  //   if (play) {
+  //     audioEle.current.play();
+  //   } else {
+  //     audioEle.current.pause();
+  //   }
+  //   console.log('11');
+  // }, [play]);
 
   return (
     <div className="header">
-      <Background />
+      {/* <div className="part">
+        <Background ani="ll" />
+      </div> */}
+
       <div className="cont">
         <h1>
           Hello this is vijay <span className="wave">👋🏻</span>
         </h1>
         <div className="content">
           <h2>I am A</h2>
-          {/* <TypeA /> */}
+          <TypeA />
         </div>
       </div>
 
       <div className="photo">
-        <div className="photo-side front">
-          <img src={img2} alt="steve jobs" />
-        </div>
-        <div className="photo-side back">
-          <img src={img1} alt="steve jobs" />
+        <div className="inner">
+          <div className="photo-side front">
+            <img src={img3} alt="steve jobs" />
+            <img src={mask} alt="mask" className="mask" />
+          </div>
+          <div className="photo-side back">
+            <img src={img1} alt="steve jobs" />
+          </div>
         </div>
       </div>
       {/* <div>{blast ? <Blast /> : ''}</div> */}
-      <div className="audio">
+      {/* <div className="audio">
         <audio src={ad} ref={audioEle} />
         <button className="music" onClick={handler}>
           {play ? (
@@ -64,7 +72,7 @@ const Header = () => {
             <FaVolumeUp className="ic play" />
           )}
         </button>
-      </div>
+      </div> */}
       <div className="links">
         <div className="icon li">
           <a

@@ -15,23 +15,27 @@ const Blast = () => {
     await console.log(container);
   }, []);
 
-  const options = {
+  const opt = {
     fullScreen: {
-      zIndex: -1,
+      zIndex: 9,
     },
+
     particles: {
+      sounds: {
+        enable: true,
+      },
       number: {
         value: 0,
       },
       color: {
-        value: ['#00FFFC', '#FC00FF', '#fffc00'],
+        value: ['#00FFFC', '#FC00FF', '#fffc00', '#57df03'],
       },
       shape: {
         type: ['polygon', 'triangle', 'circle'],
         options: {},
       },
       opacity: {
-        value: 1,
+        value: 6,
         animation: {
           enable: true,
           minimumValue: 0,
@@ -123,11 +127,11 @@ const Blast = () => {
     },
     emitters: {
       position: {
-        x: 70,
-        y: 30,
+        x: 85,
+        y: 20,
       },
       life: {
-        count: 3,
+        count: 4,
         duration: 0.4,
         delay: 0.4,
       },
@@ -147,7 +151,7 @@ const Blast = () => {
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
-        options={options}
+        options={opt}
       />
     </div>
   );

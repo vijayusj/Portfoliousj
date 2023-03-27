@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Pacifico&display=swap');
+
 *,
 *::before,
 *::after {
@@ -20,10 +22,4 @@ body {
   /* overflow-y: hidden; */
   margin: 0;
   padding: 0;
-}
-
-.app {
-  color: rgb(55, 232, 61);
-  color: rgb(238, 83, 238);
-  color: #0b0611;
 }
