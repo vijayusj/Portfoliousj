@@ -3,8 +3,11 @@ import Background from './BackgroundA';
 import Blast from './Blast';
 import img1 from '../assets/images/5295497.jpg';
 import img2 from '../assets/images/5295526.jpg';
+<<<<<<< HEAD
 import img3 from '../assets/images/animated.jpeg';
 import mask from '../assets/images/sjmask_thumbnail.png';
+=======
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
 import {
   FaVolumeMute,
   FaVolumeUp,
@@ -15,10 +18,17 @@ import {
 import { SiLeetcode } from 'react-icons/si';
 // scss
 import ad from '../assets/audio/Cornfield_Chase_Piano_Interstellar-646455.mp3';
+<<<<<<< HEAD
 // import '../sass/_header.scss';
 import TypeA from './TypeA';
 const Header = () => {
   // const audioEle = useRef();
+=======
+import '../sass/_header.scss';
+import TypeA from './TypeA';
+const Header = () => {
+  const audioEle = useRef();
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
   // const [blast, setBlast] = useState(true);
   const [play, setPlay] = useState(false);
 
@@ -26,6 +36,7 @@ const Header = () => {
     setPlay(!play);
   };
 
+<<<<<<< HEAD
   // useEffect(() => {
   //   if (play) {
   //     audioEle.current.play();
@@ -41,17 +52,36 @@ const Header = () => {
         <Background ani="ll" />
       </div>
 
+=======
+  useEffect(() => {
+    if (play) {
+      audioEle.current.play();
+    } else {
+      audioEle.current.pause();
+    }
+    console.log('11');
+  }, [play]);
+
+  return (
+    <div className="header">
+      <Background />
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
       <div className="cont">
         <h1>
           Hello this is vijay <span className="wave">👋🏻</span>
         </h1>
         <div className="content">
           <h2>I am A</h2>
+<<<<<<< HEAD
           <TypeA />
+=======
+          {/* <TypeA /> */}
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
         </div>
       </div>
 
       <div className="photo">
+<<<<<<< HEAD
         <div className="inner">
           <div className="photo-side front">
             <img src={img3} alt="steve jobs" />
@@ -64,6 +94,17 @@ const Header = () => {
       </div>
       {/* <div>{blast ? <Blast /> : ''}</div> */}
       {/* <div className="audio">
+=======
+        <div className="photo-side front">
+          <img src={img2} alt="steve jobs" />
+        </div>
+        <div className="photo-side back">
+          <img src={img1} alt="steve jobs" />
+        </div>
+      </div>
+      {/* <div>{blast ? <Blast /> : ''}</div> */}
+      <div className="audio">
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
         <audio src={ad} ref={audioEle} />
         <button className="music" onClick={handler}>
           {play ? (
@@ -72,7 +113,11 @@ const Header = () => {
             <FaVolumeUp className="ic play" />
           )}
         </button>
+<<<<<<< HEAD
       </div> */}
+=======
+      </div>
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
       <div className="links">
         <div className="icon li">
           <a

@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 // import '../sass/_skills.scss';
 const Skills = () => {
   return (
@@ -72,6 +73,18 @@ const Skills = () => {
           />
         </div>
       </div>
+=======
+import '../sass/_skills.scss';
+const Skills = () => {
+  return (
+    <div className="skills">
+      <h1>hello</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus harum
+        aliquid quia rem, sunt quibusdam eum minus vitae repellendus deserunt,
+        nam alias nobis beatae quam quaerat laborum nemo atque voluptatibus.
+      </p>
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
     </div>
   );
 };

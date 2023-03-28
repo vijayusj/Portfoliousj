@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 import { useEffect } from 'react';
+=======
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
 import './App.css';
 import Header from './components/Header';
 import Skills from './components/Skills';
 import Navigation from './components/Navigation';
+<<<<<<< HEAD
 import Settings from './components/Settings';
 import Certificates from './components/Certificates';
 import Projects from './components/Projects';
@@ -33,6 +37,15 @@ function App() {
       <Cert />
       <Form />
       <Footer />
+=======
+
+function App() {
+  return (
+    <div>
+      {/* <Navigation /> */}
+      <Header />
+      <Skills />
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
     </div>
   );
 }

@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Pacifico&display=swap');
 
+=======
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
 *,
 *::before,
 *::after {
@@ -23,3 +26,12 @@ body {
   margin: 0;
   padding: 0;
 }
+<<<<<<< HEAD
+=======
+
+.app {
+  color: rgb(55, 232, 61);
+  color: rgb(238, 83, 238);
+  color: #0b0611;
+}
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f

@@ -1,5 +1,9 @@
 import React from 'react';
+<<<<<<< HEAD
 // import '../sass/_Navigation.scss';
+=======
+import '../sass/_Navigation.scss';
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
 const Navigation = () => {
   function click() {
     document.querySelector('.btns').classList.toggle('active');

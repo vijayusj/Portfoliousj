@@ -15,6 +15,7 @@ const Blast = () => {
     await console.log(container);
   }, []);
 
+<<<<<<< HEAD
   const opt = {
     fullScreen: {
       zIndex: 9,
@@ -24,18 +25,33 @@ const Blast = () => {
       sounds: {
         enable: true,
       },
+=======
+  const options = {
+    fullScreen: {
+      zIndex: -1,
+    },
+    particles: {
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
       number: {
         value: 0,
       },
       color: {
+<<<<<<< HEAD
         value: ['#00FFFC', '#FC00FF', '#fffc00', '#57df03'],
+=======
+        value: ['#00FFFC', '#FC00FF', '#fffc00'],
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
       },
       shape: {
         type: ['polygon', 'triangle', 'circle'],
         options: {},
       },
       opacity: {
+<<<<<<< HEAD
         value: 6,
+=======
+        value: 1,
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
         animation: {
           enable: true,
           minimumValue: 0,
@@ -127,11 +143,19 @@ const Blast = () => {
     },
     emitters: {
       position: {
+<<<<<<< HEAD
         x: 85,
         y: 20,
       },
       life: {
         count: 4,
+=======
+        x: 70,
+        y: 30,
+      },
+      life: {
+        count: 3,
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
         duration: 0.4,
         delay: 0.4,
       },
@@ -151,7 +175,11 @@ const Blast = () => {
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
+<<<<<<< HEAD
         options={opt}
+=======
+        options={options}
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
       />
     </div>
   );

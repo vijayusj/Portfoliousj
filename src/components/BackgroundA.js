@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useCallback } from 'react';
 import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
@@ -6,6 +7,22 @@ const BackgroundA = ({ ani }) => {
   const opt1 = {
     fullScreen: {
       enable: false,
+=======
+import React, { useState, useEffect, useCallback } from 'react';
+import Particles from 'react-particles';
+import { loadFull } from 'tsparticles';
+
+const BackgroundA = () => {
+  const [blast, setBlast] = useState(false);
+  setTimeout(() => {
+    setBlast(true);
+  }, 5000);
+
+  useEffect(() => {}, [blast]);
+  const opt1 = {
+    fullScreen: {
+      // enable: false,
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
       zIndex: -1,
     },
     background: {
@@ -65,7 +82,11 @@ const BackgroundA = ({ ani }) => {
           enable: false,
           // area: 800,
         },
+<<<<<<< HEAD
         value: 30,
+=======
+        value: 100,
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
       },
 
       opacity: {
@@ -82,22 +103,35 @@ const BackgroundA = ({ ani }) => {
   };
   const opt2 = {
     fullScreen: {
+<<<<<<< HEAD
       zIndex: 9,
     },
 
+=======
+      zIndex: -1,
+    },
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
     particles: {
       number: {
         value: 0,
       },
       color: {
+<<<<<<< HEAD
         value: ['#00FFFC', '#FC00FF', '#fffc00', '#57df03'],
+=======
+        value: ['#00FFFC', '#FC00FF', '#fffc00'],
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
       },
       shape: {
         type: ['polygon', 'triangle', 'circle'],
         options: {},
       },
       opacity: {
+<<<<<<< HEAD
         value: 6,
+=======
+        value: 1,
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
         animation: {
           enable: true,
           minimumValue: 0,
@@ -189,17 +223,29 @@ const BackgroundA = ({ ani }) => {
     },
     emitters: {
       position: {
+<<<<<<< HEAD
         x: 50,
         y: 5,
       },
       life: {
         count: 4,
+=======
+        x: 70,
+        y: 30,
+      },
+      life: {
+        count: 3,
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
         duration: 0.4,
         delay: 0.4,
       },
       rate: {
         delay: 0.4,
+<<<<<<< HEAD
         quantity: 100,
+=======
+        quantity: 150,
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
       },
       size: {
         width: 0,
@@ -214,11 +260,16 @@ const BackgroundA = ({ ani }) => {
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
+<<<<<<< HEAD
     await console.log(container);
+=======
+    // await console.log(container);
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
   }, []);
 
   return (
     <div className="bg">
+<<<<<<< HEAD
       <div className="blast">
         {ani && (
           <Particles
@@ -232,12 +283,27 @@ const BackgroundA = ({ ani }) => {
 
       <div className="blast">
         {!ani && (
+=======
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={opt1}
+      />
+      <div className="ani">
+        {blast ? (
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
           <Particles
             id="tsparticle"
             init={particlesInit}
             loaded={particlesLoaded}
             options={opt2}
           />
+<<<<<<< HEAD
+=======
+        ) : (
+          ''
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
         )}
       </div>
     </div>

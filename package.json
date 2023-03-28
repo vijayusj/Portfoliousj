@@ -3,16 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@emailjs/browser": "^3.10.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
+=======
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-particles": "^2.9.3",
+<<<<<<< HEAD
     "react-scripts": "^5.0.1",
+=======
+    "react-scripts": "5.0.1",
+>>>>>>> f85d29853ae511b45003b4579aeac99fd196788f
     "react-type-animation": "^2.1.2",
     "sass": "^1.59.2",
     "tsparticles": "^2.9.3",
