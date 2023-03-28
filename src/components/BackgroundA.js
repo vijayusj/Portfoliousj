@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useCallback } from 'react';
 import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
-
+// eslint-disable-next-line
 const BackgroundA = ({ ani }) => {
   const opt1 = {
     fullScreen: {

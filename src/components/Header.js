@@ -37,9 +37,9 @@ const Header = () => {
 
   return (
     <div className="header">
-      {/* <div className="part">
+      <div className="part">
         <Background ani="ll" />
-      </div> */}
+      </div>
 
       <div className="cont">
         <h1>
